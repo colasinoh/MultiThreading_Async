@@ -30,7 +30,7 @@ namespace Task_E
             Task<int> t3 = Task.Run(() =>
             {
                 return 2;
-            }).ContinueWith((i) =>
+            }).ContinueWith(i =>
             {
                 return i.Result * 2;
             });
@@ -46,14 +46,14 @@ namespace Task_E
             t4.ContinueWith(i =>
             {
                 Console.WriteLine("Cancelled");
-            }, TaskContinuationOptions.OnlyOnCanceled).ContinueWith((i) =>{
+            }, TaskContinuationOptions.OnlyOnCanceled).ContinueWith(i =>{
                 Console.Write("Faulted");
             }, TaskContinuationOptions.OnlyOnFaulted).ContinueWith((i) => {
                 Console.WriteLine("Completed");
             }, TaskContinuationOptions.OnlyOnRanToCompletion);
 
             t4.Wait();
-            Console.Write(t4.Status);
+            Console.Write("t4 status: " + t4.Status);
 
             //using child tasks
             Task<Int16[]> parentTask = Task.Run(() => {
@@ -117,10 +117,10 @@ namespace Task_E
                 Console.WriteLine("Task 3");
                 return 3;
             });
-
+            
             Task.WaitAll(tasks);
 
-            
+            //using Task.WaitAny
 
             Console.ReadKey();
         }
