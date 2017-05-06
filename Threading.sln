@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task", "Task\Task.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parallelism", "Parallel\Parallelism.csproj", "{20FCBDC2-9B8D-4C6C-BFC6-7B34770928F4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncAwait", "AsyncAwait\AsyncAwait.csproj", "{104D907D-FD4B-40DA-84F9-CCF1A82B7BD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PLINQ", "PLINQ\PLINQ.csproj", "{6DF04996-2E82-4C6B-8B0F-D426ADDCA10D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{20FCBDC2-9B8D-4C6C-BFC6-7B34770928F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20FCBDC2-9B8D-4C6C-BFC6-7B34770928F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20FCBDC2-9B8D-4C6C-BFC6-7B34770928F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{104D907D-FD4B-40DA-84F9-CCF1A82B7BD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{104D907D-FD4B-40DA-84F9-CCF1A82B7BD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{104D907D-FD4B-40DA-84F9-CCF1A82B7BD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{104D907D-FD4B-40DA-84F9-CCF1A82B7BD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DF04996-2E82-4C6B-8B0F-D426ADDCA10D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DF04996-2E82-4C6B-8B0F-D426ADDCA10D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DF04996-2E82-4C6B-8B0F-D426ADDCA10D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DF04996-2E82-4C6B-8B0F-D426ADDCA10D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
