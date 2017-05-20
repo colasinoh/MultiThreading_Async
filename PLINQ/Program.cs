@@ -13,7 +13,7 @@ namespace PLINQ
         {
             var numbers = Enumerable.Range(1, 100);
 
-            //enforcing force parallelism of LINQ query
+            //enforcing parallelism of LINQ query
             var fivers = numbers.AsParallel().WithExecutionMode(ParallelExecutionMode.ForceParallelism).Where( i => i % 5 == 0).ToArray();
 
             //limiting the degree of parellelism of LINQ query
