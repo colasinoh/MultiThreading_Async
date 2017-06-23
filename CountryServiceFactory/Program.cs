@@ -38,7 +38,7 @@ namespace CountryServiceFactory
             mockServiceKorea.Setup(m => m.CalcDiscount()).Returns(() => "Here goes the calculation specific to South Korea...");
             Console.WriteLine("Mock Korea: " + mockServiceKorea.Object.CalcDiscount());
 
-            //implement multiple interface in Service mock
+            //implement multiple interface in Service mocks
             //var serviceMock = new Mock<IService>();
             //var disposableService = serviceMock.As<IDisposable>();
             //disposableService.Setup(dS => dS.Dispose());
