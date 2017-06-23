@@ -16,7 +16,7 @@ namespace ConcurrentCollections
 
             //using BlockingCollection - thread-safe for adding & removing data
             BlockingCollection<string> bCol = new BlockingCollection<string>();
-
+            
             tasks[0] = Task.Run(() => {
                 
                 foreach (var bColItem in bCol.GetConsumingEnumerable())

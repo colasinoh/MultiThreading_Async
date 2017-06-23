@@ -15,7 +15,7 @@ namespace PLINQ
 
             //enforcing parallelism of LINQ query
             var fivers = numbers.AsParallel().WithExecutionMode(ParallelExecutionMode.ForceParallelism).Where( i => i % 5 == 0).ToArray();
-
+            
             //limiting the degree of parellelism of LINQ query
             //buffer and sort using AsOrdered
             var sixers = numbers.AsParallel().AsOrdered().WithDegreeOfParallelism(5).Where(i => i % 6 == 0);
